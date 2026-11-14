@@ -6,8 +6,11 @@ type Skill = {
     stuck: string;
 };
 
-const skills: Skill[] = [{ skill: "skill", stuck: "stuck" }];
-
+const skills: Skill[] = [
+    { skill: "Node.js · NestJS · Next.js", stuck: "Full-stack JavaScript developer" },
+    { skill: "Digital Marketing", stuck: "Learning & building skills" },
+    { skill: "Problem Solver", stuck: "Turning ideas into products" },
+];
 export default function HomeAbout() {
     return (
         <div className={styles.home_about}>
@@ -16,7 +19,7 @@ export default function HomeAbout() {
                     <div className={styles.intro}>
                         <h1 className="text-2xl font-bold">About Me</h1>
                         <h2 className="text-brand-400">Full Stack Developer & Digital Marketer</h2>
-                        <p className="text-lg">
+                        <p className="lg:text-[16px]">
                             I'm Niemur Rahman Naeim, a passionate full-stack JavaScript developer with hands-on
                             experience in Node.js, React, Next.js, Express and NestJS. I started by building web
                             applications and grew into scalable systems, APIls and modern frontends. Now I'm expanding
@@ -39,13 +42,19 @@ export default function HomeAbout() {
                         />
                     </div>
                 </div>
-                <div>
-                    <ul>
-                        {skills.map((skill) => (
-                            <li key={skill.skill}>{skill.skill}</li>
-                        ))}
-                    </ul>
-                </div>
+            </div>
+            <div className="brand-container">
+                <ul className={styles.list}>
+                    {skills.map((skill, idx) => (
+                        <li className={styles.list_item} key={idx}>
+                            <div className={styles.icon}></div>
+                            <div>
+                                <h3 className="font-semibold">{skill.skill}</h3>
+                                <p>{skill.stuck}</p>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </div>
     );

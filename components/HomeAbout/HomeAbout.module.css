@@ -33,3 +33,15 @@
 .photo {
     @apply w-full h-auto rounded-sm;
 }
+
+.list {
+    @apply w-full flex flex-col gap-5 lg:flex-row lg:justify-between;
+}
+
+.list_item {
+    @apply flex items-center gap-5 p-2.5 bg-brand-light-200 rounded-sm border border-brand-light-400 lg:grow;
+
+    .icon {
+        @apply size-7.5 rounded-full bg-white border border-brand-light-400;
+    }
+}
