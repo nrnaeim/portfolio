@@ -9,15 +9,15 @@
 }
 
 .intro_container {
-    @apply flex flex-col gap-10 md:flex-row md:justify-between md:items-center;
+    @apply flex flex-col gap-15 md:flex-row md:justify-between;
 }
 
 .intro {
-    @apply flex flex-col justify-end  gap-5 md:max-w-120;
+    @apply flex flex-col justify-between gap-5 md:flex-7  lg:max-w-165;
 }
 
 .resume_btn {
-    @apply btn brand-transition;
+    @apply btn brand-transition lg:w-50;
     background: linear-gradient(to left, var(--color-brand-400) 50%, var(--color-brand-500) 50%);
     background-position: right;
     background-size: 200% auto;
@@ -27,9 +27,9 @@
 }
 
 .photo_container {
-    @apply flex justify-center items-center md:max-w-100;
+    @apply flex justify-center items-center  md:max-w-80 md:flex-5 md:items-end;
 }
 
 .photo {
-    @apply w-fit h-auto;
+    @apply w-full h-auto rounded-sm;
 }

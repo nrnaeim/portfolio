@@ -16,7 +16,7 @@ export default function HomeAbout() {
                     <div className={styles.intro}>
                         <h1 className="text-2xl font-bold">About Me</h1>
                         <h2 className="text-brand-400">Full Stack Developer & Digital Marketer</h2>
-                        <p>
+                        <p className="text-lg">
                             I'm Niemur Rahman Naeim, a passionate full-stack JavaScript developer with hands-on
                             experience in Node.js, React, Next.js, Express and NestJS. I started by building web
                             applications and grew into scalable systems, APIls and modern frontends. Now I'm expanding
@@ -33,13 +33,12 @@ export default function HomeAbout() {
                             src={"/assets/md-niemur-rahman-naeim-professional.png"}
                             loading="lazy"
                             alt="md.-niemur-rahman-naeim"
-                            width={1000}
-                            height={1000}
+                            width={400}
+                            height={1448}
                             className={styles.photo}
                         />
                     </div>
                 </div>
-
                 <div>
                     <ul>
                         {skills.map((skill) => (
