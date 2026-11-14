@@ -34,6 +34,7 @@ export default function Header() {
                                 key={page.href}
                                 href={page.href}
                                 className={`${styles.sm_nav_link} ${pathName === page.href ? "text-brand-400" : ""}`}
+                                onClick={() => setIsMenuOpen((current) => !current)}
                             >
                                 {page.label}
                             </Link>
