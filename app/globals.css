@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+    /* Colors Start */
+    --color-brand-100: #a9dccb;
+    --color-brand-200: #3dd6a8;
+    --color-brand-300: #10a07a;
+    --color-brand-400: #14b88a;
+    --color-brand-500: #0b7a5a;
+    --color-brand-700: #096a4e;
+    --color-brand-800: #075a42;
+
+    --color-brand-light-100: #f7fcfa;
+    --color-brand-light-200: #e6f7f1;
+    --color-brand-light-300: #a9dccb;
+    --color-brand-light-400: #a9cfc3;
+
+    --color-ink-100: #4a6362;
+    --color-ink-200: #1e3f3c;
+    --color-ink-300: #123a37;
+    --color-ink-400: #0d2927;
+    --color-ink-500: #071d1c;
+    /* Colors End */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Custom utility classes start */
+@utility flex-col-center {
+    @apply flex flex-col justify-center items-center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility flex-row-center {
+    @apply flex flex-row justify-center items-center;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility flex-row-between {
+    @apply flex flex-row justify-between items-center;
 }
+
+@utility brand-transition {
+    @apply transition-all duration-300  ease-in-out;
+}
+
+@utility btn {
+    @apply py-2.5 px-5 text-sm text-white cursor-pointer rounded-sm flex justify-center items-center;
+}
+
+@utility section-container {
+    @apply w-full flex flex-col items-center text-sm;
+}
+
+@utility brand-container {
+    @apply w-full md:max-w-180 lg:max-w-240 xl:max-w-300 p-5;
+}
+/* Custom utility classes end */

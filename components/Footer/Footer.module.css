@@ -1,0 +1,20 @@
+@reference "../../app/globals.css";
+
+.footer {
+    @apply section-container text-white bg-ink-500;
+}
+.container {
+    @apply brand-container;
+}
+
+.info {
+    @apply flex flex-col justify-start gap-3 border-b border-b-ink-100 pb-5 lg:flex-row lg:justify-between lg:items-center;
+}
+
+.copyright_social {
+    @apply py-5  flex-row-between;
+}
+
+.social_links {
+    @apply hidden sm:flex justify-center items-center gap-2.5;
+}

@@ -1,0 +1,25 @@
+@reference "../../app/globals.css";
+
+.feature {
+    @apply section-container bg-brand-light-100;
+}
+
+.container {
+    @apply brand-container p-5 flex flex-col gap-5;
+}
+
+.feature_list {
+    @apply flex flex-col gap-5 md:flex-row md:flex-wrap;
+}
+
+.feature_list_item {
+    @apply w-full flex justify-start items-center gap-2.5 p-3 border border-brand-light-300 bg-white
+     rounded-md md:flex-1 md:flex-col md:justify-start md:items-start;
+}
+
+.icon {
+    @apply size-10 bg-brand-light-200 border border-brand-light-300 rounded-full flex justify-center items-center;
+    div {
+        @apply size-4 bg-brand-400 rounded-sm;
+    }
+}

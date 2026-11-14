@@ -1,0 +1,54 @@
+@reference "../globals.css";
+
+.contact {
+    @apply w-full flex flex-col items-center bg-brand-light-100 text-sm py-5;
+}
+
+.container {
+    @apply brand-container flex flex-col gap-10;
+}
+
+.contact_info {
+    @apply w-full flex flex-col gap-10 lg:flex-row;
+}
+.physical_contact {
+    @apply flex flex-col gap-5 min-w-83 justify-between;
+}
+
+.google_map {
+    @apply w-full rounded-md border border-brand-light-400;
+}
+
+.list {
+    @apply w-full flex flex-col gap-5;
+}
+
+.list_item {
+    @apply bg-white w-full p-3 flex flex-row items-center gap-2.5 border border-brand-light-400 rounded-md;
+}
+
+.icon {
+    @apply size-10 border border-brand-light-400 rounded-full bg-brand-light-200 flex justify-center items-center;
+    div {
+        @apply size-4 bg-brand-400 rounded-sm;
+    }
+}
+
+.form {
+    @apply p-4 flex flex-col gap-4 bg-white border rounded-md border-brand-light-400 lg:grow;
+}
+
+.input_container {
+    @apply flex flex-col gap-1;
+}
+
+.input_label {
+    @apply relative;
+    &::after {
+        @apply absolute content-["*"] text-red-500;
+    }
+}
+
+.form_input {
+    @apply outline-none border bg-brand-light-100 border-brand-light-400 rounded-md p-2.5;
+}
