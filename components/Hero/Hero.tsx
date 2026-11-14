@@ -16,7 +16,7 @@ export default function Hero() {
                 <div className={styles.intro}>
                     <div className={styles.information}>
                         <h5 className="text-brand-200"> Full-Stack JavaScript Developer</h5>
-                        <h1 className="text-xl sm:text-[34px] text-brand-200 font-bold">
+                        <h1 className="text-[28px] sm:text-[34px] text-brand-200 font-bold">
                             <span className="text-white">Hi, I’m</span> Niemur Rahman
                         </h1>
                         <p className="text-justify">
