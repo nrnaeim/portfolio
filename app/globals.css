@@ -36,6 +36,14 @@
     @apply flex flex-row justify-between items-center;
 }
 
+@utility heading {
+    @apply text-3xl;
+}
+
+@utility sub_heading {
+    @apply text-2xl;
+}
+
 @utility brand-transition {
     @apply transition-all duration-300  ease-in-out;
 }
