@@ -49,6 +49,6 @@
 }
 
 @utility brand-container {
-    @apply w-full md:max-w-180 lg:max-w-240 xl:max-w-300 p-5;
+    @apply w-full md:max-w-180 lg:max-w-240 xl:max-w-300 p-5 text-sm;
 }
 /* Custom utility classes end */
