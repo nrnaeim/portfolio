@@ -1,0 +1,29 @@
+@reference "../../app/globals.css";
+
+.skill_stack {
+    @apply w-full flex flex-col items-center bg-brand-light-100;
+}
+
+.container {
+    @apply brand-container flex flex-col gap-5;
+}
+
+.stacks_container {
+    @apply w-full flex flex-col gap-5 sm:flex-row sm:flex-wrap sm:justify-between;
+}
+
+.stack_container {
+    @apply flex flex-col gap-5 text-ink-100 p-5 border border-brand-light-400 bg-white rounded-sm sm:flex-1;
+}
+
+.skills_container {
+    @apply w-full flex flex-col gap-5 flex-1;
+}
+
+.skill_container {
+    @apply w-full flex justify-between items-center gap-10;
+}
+
+.skill {
+    @apply flex items-center px-3 py-1 rounded-full text-brand-light-100 border border-brand-light-400;
+}

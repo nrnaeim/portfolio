@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @theme {
+    /* Breakpoints Start */
+    --breakpoint-xs: 480px;
+    /* Breakpoints End */
+
     /* Colors Start */
     --color-brand-100: #a9dccb;
     --color-brand-200: #3dd6a8;
@@ -21,6 +25,10 @@
     --color-ink-400: #0d2927;
     --color-ink-500: #071d1c;
     /* Colors End */
+
+    /* Font Start */
+    --text-md: 16px;
+    /* Font End */
 }
 
 /* Custom utility classes start */
@@ -36,13 +44,26 @@
     @apply flex flex-row justify-between items-center;
 }
 
-@utility heading {
-    @apply text-3xl;
+/* Heading Start */
+@utility h_1 {
+    @apply text-3xl sm:text-4xl font-bold;
+}
+@utility h_2 {
+    @apply text-2xl sm:text-3xl font-semibold;
 }
 
-@utility sub_heading {
-    @apply text-2xl;
+@utility h_3 {
+    @apply text-xl sm:sm:text-3xl font-semibold;
 }
+
+@utility h_3 {
+    @apply text-lg sm:text-xl font-semibold;
+}
+
+@utility h_4 {
+    @apply text-md font-semibold;
+}
+/* Heading End */
 
 @utility brand-transition {
     @apply transition-all duration-300  ease-in-out;
@@ -57,6 +78,6 @@
 }
 
 @utility brand-container {
-    @apply w-full md:max-w-180 lg:max-w-240 xl:max-w-300 p-5 text-sm;
+    @apply w-full min-w-70 md:max-w-180 lg:max-w-240 xl:max-w-300 p-5 text-sm;
 }
 /* Custom utility classes end */

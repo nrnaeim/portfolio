@@ -17,9 +17,9 @@ export default function HomeAbout() {
             <div className={styles.container}>
                 <div className={styles.intro_container}>
                     <div className={styles.intro}>
-                        <h2 className="text-2xl font-bold">About Me</h2>
+                        <h2 className="h_2">About Me</h2>
                         <p className="text-brand-400">Full Stack Developer & Digital Marketer</p>
-                        <p className="lg:text-[16px]">
+                        <p className="text-ink-100">
                             I'm Niemur Rahman Naeim, a passionate full-stack JavaScript developer with hands-on
                             experience in Node.js, React, Next.js, Express and NestJS. I started by building web
                             applications and grew into scalable systems, APIls and modern frontends. Now I'm expanding
@@ -49,8 +49,8 @@ export default function HomeAbout() {
                         <li className={styles.list_item} key={idx}>
                             <div className={styles.icon}></div>
                             <div>
-                                <h3 className="font-semibold">{skill.skill}</h3>
-                                <p>{skill.stuck}</p>
+                                <h4 className="h_4">{skill.skill}</h4>
+                                <p className="text-ink-100">{skill.stuck}</p>
                             </div>
                         </li>
                     ))}

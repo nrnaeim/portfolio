@@ -1,6 +1,6 @@
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./Hero.module.css";
-import Link from "next/link";
 
 export type Skill = {
     tech_stack: string;
@@ -15,9 +15,9 @@ export default function Hero() {
             <div className={styles.container}>
                 <div className={styles.intro}>
                     <div className={styles.information}>
-                        <h5 className="text-brand-200"> Full-Stack JavaScript Developer</h5>
-                        <h1 className="text-[28px] sm:text-[34px] text-brand-200 font-bold">
-                            <span className="text-white">Hi, I’m</span> Niemur Rahman
+                        <p className="text-brand-200"> Full-Stack JavaScript Developer</p>
+                        <h1 className="h_1 text-brand-200">
+                            <span className="text-white">Hi, I’m </span>Niemur Rahman
                         </h1>
                         <p className="text-justify">
                             I build modern web applications with Node.js,
@@ -40,7 +40,7 @@ export default function Hero() {
                         {feature_skills.map((skill) => (
                             <li className={styles.skill} key={skill}>
                                 <Image
-                                    className="block  rounded-[50%] bg-white p-2"
+                                    className="block rounded-[50%] bg-white p-2"
                                     src={`/assets/tools/${skill}.svg`}
                                     alt={skill}
                                     width={40}

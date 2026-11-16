@@ -1,7 +1,7 @@
 import HomeAbout from "../components/HomeAbout/HomeAbout";
 import Hero from "../components/Hero/Hero";
 import Feature from "../components/Featcher/Feature";
-import Skill_Stuck from "@/components/Skill_Stuck/Skill_Stuck";
+import Skill_Stack from "@/components/Skill_Stuck/Skill_Stack";
 
 export default function Home() {
     return (
@@ -9,7 +9,7 @@ export default function Home() {
             <Hero />
             <Feature />
             <HomeAbout />
-            <Skill_Stuck />
+            <Skill_Stack />
         </main>
     );
 }
