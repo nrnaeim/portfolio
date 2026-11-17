@@ -30,7 +30,7 @@ export default function Cta() {
                     </div>
 
                     <div className="hidden justify-center-safe items-center sm:flex sm:flex-4">
-                        <p className={`text-center text-3xl ${caveat.className}`}>
+                        <p className={`text-center text-3xl font-semibold ${caveat.className}`}>
                             Let’s talk — <br /> I’m here!
                         </p>
                     </div>
