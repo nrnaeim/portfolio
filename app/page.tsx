@@ -11,7 +11,6 @@ export default function Home() {
             <Feature />
             <HomeAbout />
             <Skill_Stack />
-            <Cta />
         </main>
     );
 }
