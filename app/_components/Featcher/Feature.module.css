@@ -1,4 +1,4 @@
-@reference "../../app/globals.css";
+@reference "../../globals.css";
 
 .feature {
     @apply section-container bg-brand-light-100;

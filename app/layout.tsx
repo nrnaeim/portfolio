@@ -1,10 +1,10 @@
 import "./globals.css";
 import React from "react";
 import { Roboto } from "next/font/google";
-import ToastProvider from "../components/ToastProvider";
-import Header from "../components/Header/Header";
-import Footer from "@/components/Footer/Footer";
-import Cta from "@/components/Cta/Cta";
+import ToastProvider from "./_components/ToastProvider";
+import Header from "./_components/Header/Header";
+import Footer from "@/app/_components/Footer/Footer";
+import Cta from "@/app/_components/Cta/Cta";
 
 const roboto = Roboto({
     subsets: ["latin"],

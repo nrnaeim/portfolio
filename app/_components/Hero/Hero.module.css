@@ -1,4 +1,4 @@
-@reference "../../app/globals.css";
+@reference "../../globals.css";
 
 .hero {
     @apply section-container bg-ink-500 text-white;

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Caveat } from "next/font/google";
 import Container from "../Container/Container";
-import { cn } from "@/utils/utils";
+import { cn } from "@/app/_utils/utils";
 
 const caveat = Caveat({
     weight: "400",

@@ -1,7 +1,7 @@
-import HomeAbout from "../components/HomeAbout/HomeAbout";
-import Hero from "../components/Hero/Hero";
-import Feature from "../components/Featcher/Feature";
-import Skill_Stack from "@/components/Skill_Stack/Skill_Stack";
+import HomeAbout from "./_components/HomeAbout/HomeAbout";
+import Hero from "./_components/Hero/Hero";
+import Feature from "./_components/Featcher/Feature";
+import Skill_Stack from "@/app/_components/Skill_Stack/Skill_Stack";
 
 export default function Home() {
     return (

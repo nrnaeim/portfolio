@@ -1,4 +1,4 @@
-@reference "../../app/globals.css";
+@reference "../../globals.css";
 
 .footer {
     @apply section-container text-white bg-ink-500;

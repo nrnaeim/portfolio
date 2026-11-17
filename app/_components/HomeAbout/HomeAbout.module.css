@@ -1,4 +1,4 @@
-@reference "../../app/globals.css";
+@reference "../../globals.css";
 
 .home_about {
     @apply section-container;

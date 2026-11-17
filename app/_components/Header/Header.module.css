@@ -1,4 +1,4 @@
-@reference "../../app/globals.css";
+@reference "../../globals.css";
 
 .header {
     @apply w-full bg-ink-500 flex-row-center shadow-md shadow-ink-300 text-white sticky top-0 z-10000;

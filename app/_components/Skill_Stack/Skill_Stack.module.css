@@ -1,4 +1,4 @@
-@reference "../../app/globals.css";
+@reference "../../globals.css";
 
 .skill_stack {
     @apply w-full flex flex-col items-center bg-brand-light-100;

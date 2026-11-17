@@ -1,6 +1,6 @@
 "use client";
 
-import React, { SubmitEvent, useState } from "react";
+import { SubmitEvent, useState } from "react";
 import { toast } from "react-toastify";
 import styles from "./Contact.module.css";
 
